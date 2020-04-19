@@ -1,5 +1,6 @@
 package com.test.tests;
 
+import java.io.IOException;
 import java.io.InputStream;
 import java.lang.reflect.Method;
 import java.util.ArrayList;
@@ -15,9 +16,11 @@ import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
 
 import com.test.Base;
+import com.test.models.APModel;
 import com.test.pages.AP_DetailPage;
 import com.test.pages.LoginPage;
 import com.test.pages.WirelessAPListPage;
+import com.test.repo.APRepo;
 import com.test.utils.TestUtils;
 
 public class WirelessAPTest extends Base {
@@ -25,8 +28,9 @@ public class WirelessAPTest extends Base {
 	WirelessAPListPage apPage;
 	AP_DetailPage detailPage;
 	JSONObject dataset;
+	APModel ap;
+	APRepo repo;
 	TestUtils utils = new TestUtils();
-
 	@BeforeClass
 	public void beforeClass() throws Exception {
 		InputStream datais = null;
@@ -43,8 +47,7 @@ public class WirelessAPTest extends Base {
 				datais.close();
 			}
 		}
-		closeApp();
-		launchApp();
+		
 	}
 
 
@@ -62,23 +65,28 @@ public class WirelessAPTest extends Base {
 		launchApp();
 		  }
 	
-	@Test
-	public void validateAPsonWirelessAPListPage() throws InterruptedException {
-		SoftAssert sa = new SoftAssert();
-		String APName = apPage.getAPName("1");
-		sa.assertEquals(APName, getStrings().get("ap1_Name"));
-		String APIP = apPage.getAPIP("1");
-		sa.assertEquals(APIP, getStrings().get("ap1_IP"));
-		sa.assertAll();
-
-	}
+//	@Test
+//	public void validateAPsonWirelessAPListPage() throws InterruptedException {
+//		SoftAssert sa = new SoftAssert();
+//		String APName = apPage.getAPName("1");
+//		sa.assertEquals(APName, getStrings().get("ap1_Name"));
+//		String APIP = apPage.getAPIP("1");
+//		sa.assertEquals(APIP, getStrings().get("ap1_IP"));
+//		sa.assertAll();
+//
+//	}
 	
 	
 	@Test
-	  public void validateAPonAPDetailsPage() throws InterruptedException {
+	  public void validateAPonAPDetailsPage() throws InterruptedException, IOException {
 		  SoftAssert sa = new SoftAssert();
 		  detailPage= apPage.clickAPIcon("1");
+		  repo= apPage.fetchAPData("1");
+		  String model = detailPage.getAPModel();
+		  System.out.println(repo.getAP().getModel());
 		  
+		  
+		 // sa.assertEquals(model, ap.getModel());
 	  }
 
 

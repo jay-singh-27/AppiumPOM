@@ -20,10 +20,12 @@
     <classes>
       <class name="com.test.tests.WirelessAPTest">
         <methods>
-          <include name="beforeTest"/>
-          <include name="validateAPsonWirelessAPListPage"/>
+          <include name="validateAPonAPDetailsPage"/>
+          <include name="afterMethod"/>
           <include name="beforeClass"/>
           <include name="beforeMethod"/>
+          <include name="afterTest"/>
+          <include name="beforeTest"/>
         </methods>
       </class> <!-- com.test.tests.WirelessAPTest -->
     </classes>

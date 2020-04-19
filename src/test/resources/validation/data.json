@@ -2,4 +2,30 @@
 	"validKey":{
 		"apikey":"5da1735a6a6b1360986bb2c8c10ae2817e476244"
 	}
+,
+	"1":{
+		
+		"model": "MR34",
+		
+		"serial": "Q2FD-FTZE-5EQ4",
+		
+		"usage": "Unknown",
+		
+		"nofClients": "Number of clients Value"
+			
+	}
+
+
+	"2":{
+		
+		"model": "MR34",
+		
+		"serial": "Q2FD-FTZE-5EQ4",
+		
+		"usage": "Unknown",
+		
+		"nofClients": "Number of clients Value"
+			
+	}
+
 }
