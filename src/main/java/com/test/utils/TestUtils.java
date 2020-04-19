@@ -20,10 +20,10 @@ import org.w3c.dom.Element;
 import org.w3c.dom.Node;
 import org.w3c.dom.NodeList;
 
-import com.test.BaseTest;
+import com.test.Base;
 
 public class TestUtils {
-	public static final long WAIT = 10;
+	public static final long WAIT = 30;
 	
 	public HashMap<String, String> parseStringXML(InputStream file) throws Exception{
 		HashMap<String, String> stringMap = new HashMap<String, String>();
@@ -63,7 +63,7 @@ public class TestUtils {
 	}
 	
 	public void log(String txt) {
-		BaseTest base = new BaseTest();
+		Base base = new Base();
 		String msg = Thread.currentThread().getId() + ":" + base.getPlatform() + ":" + base.getDeviceName() + ":"
 				+ Thread.currentThread().getStackTrace()[2].getClassName() + ":" + txt;
 		

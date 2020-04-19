@@ -14,7 +14,7 @@ import org.testng.ITestListener;
 import org.testng.ITestResult;
 import org.testng.Reporter;
 
-import com.test.BaseTest;
+import com.test.Base;
 import com.test.utils.TestUtils;
 
 public class TestListener implements ITestListener {
@@ -28,14 +28,14 @@ public class TestListener implements ITestListener {
 			  utils.log().error(sw.toString());
 		}
 		
-		BaseTest base = new BaseTest();
+		Base base = new Base();
 		File file = base.getDriver().getScreenshotAs(OutputType.FILE);
 		
 		Map <String, String> params = new HashMap<String, String>();
 		params = result.getTestContext().getCurrentXmlTest().getAllParameters();
 		
 		String imagePath = "Screenshots" + File.separator + params.get("platformName") 
-		+ "_" + params.get("deviceName") + File.separator + base.getDateTime() + File.separator 
+		+ "_" + params.get("deviceName") + File.separator + "Failure" + File.separator + base.getDateTime() + File.separator 
 		+ result.getTestClass().getRealClass().getSimpleName() + File.separator + result.getName() + ".png";
 		
 		String completeImagePath = System.getProperty("user.dir") + File.separator + imagePath;
@@ -58,7 +58,33 @@ public class TestListener implements ITestListener {
 
 	@Override
 	public void onTestSuccess(ITestResult result) {
-		// TODO Auto-generated method stub
+		if(result.getThrowable() != null) {
+			  StringWriter sw = new StringWriter();
+			  PrintWriter pw = new PrintWriter(sw);
+			  result.getThrowable().printStackTrace(pw);
+			  utils.log().error(sw.toString());
+		}
+		
+		Base base = new Base();
+		File file = base.getDriver().getScreenshotAs(OutputType.FILE);
+		
+		Map <String, String> params = new HashMap<String, String>();
+		params = result.getTestContext().getCurrentXmlTest().getAllParameters();
+		
+		String imagePath = "Screenshots" + File.separator + params.get("platformName") 
+		+ "_" + params.get("deviceName") + File.separator +"Success" + File.separator +base.getDateTime() + File.separator 
+		+ result.getTestClass().getRealClass().getSimpleName() + File.separator + result.getName() + ".png";
+		
+		String completeImagePath = System.getProperty("user.dir") + File.separator + imagePath;
+		
+		try {
+			FileUtils.copyFile(file, new File(imagePath));
+			Reporter.log("This is the sample screenshot");
+			Reporter.log("<a href='"+ completeImagePath + "'> <img src='"+ completeImagePath + "' height='400' width='400'/> </a>");
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 		
 	}
 

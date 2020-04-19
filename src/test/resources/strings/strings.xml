@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+<!-- Error Text -->
+    <string name="invalid_APIKEY"> Invalid API Key!</string>
+    <string name="ap_page_title">Wireless AP's</string>
+
+Wireless AP page acccess point details   
+    <string name="ap1_Name">Wireless New Stadium</string>
+    <string name="ap1_IP">172.29.1.141</string>
+    <string name="ap2_Name">AP</string>
+    <string name="ap2_IP">172.29.6.87</string>
+    
+Product Details Page SLB product details    
+    <!-- <string name="product_details_page_slb_title">Sauce Labs Backpack</string>
+    <string name="product_details_page_slb_txt">carry.allTheThings() with the sleek, streamlined Sly Pack that melds uncompromising style with unequaled laptop and tablet protection.</string>
+	<string name="product_details_page_slb_price">$29.99</string> -->
+</resources>

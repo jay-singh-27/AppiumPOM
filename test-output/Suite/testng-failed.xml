@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite verbose="5" name="Failed suite [Suite]" parallel="tests">
+  <parameter name="emulator" value="true"/>
+  <parameter name="chromeDriverPort" value="9515"/>
+  <parameter name="platformName" value="Android"/>
+  <parameter name="udid" value="replace_with_device_udid"/>
+  <parameter name="deviceName" value="Pixel_2_API_28"/>
+  <parameter name="systemPort" value="10000"/>
+  <listeners>
+    <listener class-name="com.test.listeners.TestListener"/>
+  </listeners>
+  <test name="Pixel_2(failed)" parallel="tests">
+    <parameter name="emulator" value="true"/>
+    <parameter name="chromeDriverPort" value="9515"/>
+    <parameter name="platformName" value="Android"/>
+    <parameter name="udid" value="replace_with_device_udid"/>
+    <parameter name="deviceName" value="Pixel_2_API_28"/>
+    <parameter name="systemPort" value="10000"/>
+    <classes>
+      <class name="com.test.tests.WirelessAPTest">
+        <methods>
+          <include name="beforeTest"/>
+          <include name="validateAPsonWirelessAPListPage"/>
+          <include name="beforeClass"/>
+          <include name="beforeMethod"/>
+        </methods>
+      </class> <!-- com.test.tests.WirelessAPTest -->
+    </classes>
+  </test> <!-- Pixel_2(failed) -->
+</suite> <!-- Failed suite [Suite] -->

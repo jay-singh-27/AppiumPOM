@@ -1,62 +1,41 @@
 package com.test.pages;
 
 import org.openqa.selenium.Keys;
+import org.testng.annotations.Test;
 
-import com.test.BaseTest;
+import com.test.Base;
 import com.test.utils.TestUtils;
 
 import io.appium.java_client.MobileElement;
 import io.appium.java_client.pagefactory.AndroidFindBy;
-import io.appium.java_client.pagefactory.iOSXCUITFindBy;
 
-public class LoginPage extends BaseTest {
+
+
+public class LoginPage extends Base {
 	TestUtils utils = new TestUtils();
-	@AndroidFindBy (accessibility = "test-Username") 
-	@iOSXCUITFindBy (id = "test-Username")
-	private MobileElement usernameTxtFld;
-
-	@AndroidFindBy (accessibility = "test-Password") 
-	@iOSXCUITFindBy (id = "test-Password")
-	private MobileElement passwordTxtFld;
 	
-	@AndroidFindBy (accessibility = "test-LOGIN") 
-	@iOSXCUITFindBy (id = "test-LOGIN")
-	private MobileElement loginBtn;
+	@AndroidFindBy (xpath = "//android.widget.EditText[@resource-id='com.meraki.mapidemo:id/apiKeyTxt']") 
+	private MobileElement apiKeyText;
 	
-	@AndroidFindBy (xpath = "//android.view.ViewGroup[@content-desc=\"test-Error message\"]/android.widget.TextView") 
-	@iOSXCUITFindBy (xpath = "//XCUIElementTypeOther[@name=\"test-Error message\"]/child::XCUIElementTypeStaticText")
-	private MobileElement errTxt;
+	@AndroidFindBy (xpath = "//android.widget.Button[@resource-id='com.meraki.mapidemo:id/goButton']") 
+	private MobileElement goButton;
 	
-public LoginPage enterUserName(String username) {
-	clear(usernameTxtFld);
-	utils.log().info("login with " + username);
-	sendKeys(usernameTxtFld, username);
-	return this;
-}
+	public LoginPage enterAPIKey(String apikey) {
+		clear(apiKeyText);
+		utils.log().info("login with " + apikey);
+		sendKeys(apiKeyText, apikey);
+		return this;
+	}
 
-public LoginPage enterPassword(String password) {
-	clear(passwordTxtFld);
-	utils.log().info("password is " + password);
-	sendKeys(passwordTxtFld, password);
-	return this;
-}
-
-public ProductsPage pressLoginBtn() {
-	utils.log().info("press login button");
-	click(loginBtn);
-	return new ProductsPage();
-}
-
-public ProductsPage login(String username, String password) {
-	enterUserName(username);
-	enterPassword(password);
-	return pressLoginBtn();
-}
-
-public String getErrTxt() {
-	String err = getText(errTxt);
-	utils.log().info("error text is - " + err);
-	return err;
-}
+	public WirelessAPListPage pressGoBtn() {
+		utils.log().info("press Go button");
+		click(goButton);
+		return new WirelessAPListPage();
+	}
+	
+	public WirelessAPListPage login(String apikey) {
+		enterAPIKey(apikey);
+		return pressGoBtn();
+	}
 
 }
