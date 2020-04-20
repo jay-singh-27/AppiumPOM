@@ -7,6 +7,7 @@
   <parameter name="udid" value="replace_with_device_udid"/>
   <parameter name="deviceName" value="Pixel_2_API_28"/>
   <parameter name="systemPort" value="10000"/>
+  <parameter name="testDataValue" value="1"/>
   <listeners>
     <listener class-name="com.test.listeners.TestListener"/>
   </listeners>
@@ -17,25 +18,20 @@
     <parameter name="udid" value="replace_with_device_udid"/>
     <parameter name="deviceName" value="Pixel_2_API_28"/>
     <parameter name="systemPort" value="10000"/>
+    <parameter name="testDataValue" value="1"/>
     <classes>
+      <class name="com.test.tests.LoginTest">
+        <methods>
+          <include name="successfulLogin"/>
+          <include name="beforeTest"/>
+        </methods>
+      </class> <!-- com.test.tests.LoginTest -->
       <class name="com.test.tests.WirelessAPTest">
         <methods>
           <include name="validateAPsonWirelessAPListPage"/>
           <include name="validateAPonAPDetailsPage"/>
-          <include name="afterMethod"/>
-          <include name="beforeClass"/>
-          <include name="beforeMethod"/>
         </methods>
       </class> <!-- com.test.tests.WirelessAPTest -->
-      <class name="com.test.tests.LoginTest">
-        <methods>
-          <include name="beforeClass"/>
-          <include name="beforeMethod"/>
-          <include name="afterTest"/>
-          <include name="afterMethod"/>
-          <include name="beforeTest"/>
-        </methods>
-      </class> <!-- com.test.tests.LoginTest -->
     </classes>
   </test> <!-- Pixel_2(failed) -->
 </suite> <!-- Failed suite [Suite] -->

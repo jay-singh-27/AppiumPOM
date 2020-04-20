@@ -9,6 +9,7 @@ import org.json.JSONTokener;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
 
@@ -74,12 +75,12 @@ public class WirelessAPTest extends Base {
 
 	}
 	
-	
+	@Parameters({"testDataValue"})
 	@Test(priority= 2)
-	  public void validateAPonAPDetailsPage() throws InterruptedException, IOException {
+	  public void validateAPonAPDetailsPage(String key) throws InterruptedException, IOException {
 		  SoftAssert sa = new SoftAssert();
-		  detailPage= apPage.clickAPIcon("1");
-		  repo= apPage.fetchAPData("1");
+		  detailPage= apPage.clickAPIcon(key);
+		  repo= apPage.fetchAPData(key);
 		  
 		  String model = detailPage.getAPModel();
 		  sa.assertEquals(model, repo.getAP().getModel());

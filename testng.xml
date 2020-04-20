@@ -10,6 +10,7 @@
 		<parameter name="deviceName" value="Pixel_2_API_28" />
 		<parameter name="systemPort" value="10000" />
 		<parameter name="chromeDriverPort" value="9515" />
+		<parameter name="testDataValue" value="1" />
 		<classes>
 			<class name="com.test.tests.LoginTest"></class>
 			<class name="com.test.tests.WirelessAPTest"></class>
