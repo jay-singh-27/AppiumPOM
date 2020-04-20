@@ -1,5 +1,5 @@
 
-## Meraki_TestProject
+## AppiumPOM_TestProject
 Developed by: Jigar Singh
 
 ### Framework used
