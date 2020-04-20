@@ -6,22 +6,22 @@ public class APModel {
 	private String serial;
 	private String usage;
 	private String nofClients;
-	
+
 	public APModel(){
-	
+
 	}
-	
-	
- public APModel(String model, String serial, String usage, String nofClients){
+
+
+	public APModel(String model, String serial, String usage, String nofClients){
 		this.model= model;
 		this.serial= serial;
 		this.usage= usage;
 		this.nofClients= nofClients;
-		
-		
+
+
 	}
- 
- public String getModel() {
+
+	public String getModel() {
 		return model;
 	}
 
@@ -53,18 +53,18 @@ public class APModel {
 		this.nofClients = nofClients;
 	}
 
-	
+
 	@Override
 	public String toString() {
 		return "APModel [model=" + model + ", serial=" + serial + ", usage=" + usage + ", nofClients="
 				+ nofClients + "]";
 	}
 
- 
- 
- 
-	
-	
-	
-	
+
+
+
+
+
+
+
 }

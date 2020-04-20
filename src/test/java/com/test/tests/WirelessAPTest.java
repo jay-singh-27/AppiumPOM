@@ -3,12 +3,9 @@ package com.test.tests;
 import java.io.IOException;
 import java.io.InputStream;
 import java.lang.reflect.Method;
-import java.util.ArrayList;
-import java.util.List;
 
 import org.json.JSONObject;
 import org.json.JSONTokener;
-import org.testng.annotations.AfterClass;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
@@ -47,7 +44,8 @@ public class WirelessAPTest extends Base {
 				datais.close();
 			}
 		}
-		
+		closeApp();
+		launchApp();
 	}
 
 
@@ -65,28 +63,34 @@ public class WirelessAPTest extends Base {
 		launchApp();
 		  }
 	
-//	@Test
-//	public void validateAPsonWirelessAPListPage() throws InterruptedException {
-//		SoftAssert sa = new SoftAssert();
-//		String APName = apPage.getAPName("1");
-//		sa.assertEquals(APName, getStrings().get("ap1_Name"));
-//		String APIP = apPage.getAPIP("1");
-//		sa.assertEquals(APIP, getStrings().get("ap1_IP"));
-//		sa.assertAll();
-//
-//	}
+	@Test(priority= 1)
+	public void validateAPsonWirelessAPListPage() throws InterruptedException {
+		SoftAssert sa = new SoftAssert();
+		String APName = apPage.getAPName("1");
+		sa.assertEquals(APName, getStrings().get("ap1_Name"));
+		String APIP = apPage.getAPIP("1");
+		sa.assertEquals(APIP, getStrings().get("ap1_IP"));
+		sa.assertAll();
+
+	}
 	
 	
-	@Test
+	@Test(priority= 2)
 	  public void validateAPonAPDetailsPage() throws InterruptedException, IOException {
 		  SoftAssert sa = new SoftAssert();
 		  detailPage= apPage.clickAPIcon("1");
 		  repo= apPage.fetchAPData("1");
+		  
 		  String model = detailPage.getAPModel();
-		  System.out.println(repo.getAP().getModel());
+		  sa.assertEquals(model, repo.getAP().getModel());
+		  String serial = detailPage.getAPSerial();
+		  sa.assertEquals(serial, repo.getAP().getSerial());
+		  String usage = detailPage.getAPUsage();
+		  sa.assertEquals(usage, repo.getAP().getUsage());
+		  String nofClients = detailPage.getAPClient();
+		  sa.assertEquals(nofClients, repo.getAP().getNofClients());
 		  
-		  
-		 // sa.assertEquals(model, ap.getModel());
+		  sa.assertAll();
 	  }
 
 

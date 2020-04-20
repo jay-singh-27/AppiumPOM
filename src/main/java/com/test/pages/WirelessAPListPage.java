@@ -13,7 +13,7 @@ import io.appium.java_client.pagefactory.AndroidFindBy;
 
 
 public class WirelessAPListPage extends Base{
-    APRepo repo;
+	APRepo repo;
 	TestUtils utils = new TestUtils();
 
 	@AndroidFindBy (className = "android.widget.TextView") 
@@ -21,6 +21,15 @@ public class WirelessAPListPage extends Base{
 
 	@AndroidFindBy (xpath = "//androidx.recyclerview.widget.RecyclerView[@resource-id = 'com.meraki.mapidemo:id/deviceList']/child::android.view.ViewGroup") 
 	private List<MobileElement> apList;
+
+	@AndroidFindBy (xpath = "//android.widget.TextView[@resource-id='com.meraki.mapidemo:id/deviceName']")
+	private List<MobileElement> apName;
+
+	@AndroidFindBy (xpath = "//android.widget.TextView[@resource-id = 'com.meraki.mapidemo:id/deviceDetails']") 
+	private List<MobileElement> apIP;
+
+	@AndroidFindBy (xpath = "//android.widget.ImageView[@resource-id = 'com.meraki.mapidemo:id/deviceIcon']") 
+	private List<MobileElement> apIcon;
 
 	private MobileElement getAPNameElement(String key){
 		MobileElement e = (MobileElement) getDriver().findElementByXPath("(//android.widget.TextView[@resource-id='com.meraki.mapidemo:id/deviceName'])["+key+"]");
@@ -32,21 +41,14 @@ public class WirelessAPListPage extends Base{
 		MobileElement e = (MobileElement) getDriver().findElementByXPath("(//android.widget.TextView[@resource-id='com.meraki.mapidemo:id/deviceDetails'])["+key+"]");
 		return e;
 	}
-	
-	
+
+
 	private MobileElement getAPIconElement(String key){
 		MobileElement e = (MobileElement) getDriver().findElementByXPath("(//android.widget.ImageView[@resource-id='com.meraki.mapidemo:id/deviceIcon'])["+key+"]");
 		return e;
 	}
 
-	@AndroidFindBy (xpath = "//android.widget.TextView[@resource-id='com.meraki.mapidemo:id/deviceName']")
-	private List<MobileElement> apName;
 
-	@AndroidFindBy (xpath = "//android.widget.TextView[@resource-id = 'com.meraki.mapidemo:id/deviceDetails']") 
-	private List<MobileElement> apIP;
-
-	@AndroidFindBy (xpath = "//android.widget.ImageView[@resource-id = 'com.meraki.mapidemo:id/deviceIcon']") 
-	private List<MobileElement> apIcon;
 
 	public String getTitle() {
 		String title = getText(ap_MenuPageTitle);
@@ -79,7 +81,7 @@ public class WirelessAPListPage extends Base{
 		return ip;
 	}
 
-	
+
 	public AP_DetailPage clickAPIcon(String key) throws InterruptedException, IOException {
 		Thread.sleep(3000);
 		utils.log().info("click AP Icon");

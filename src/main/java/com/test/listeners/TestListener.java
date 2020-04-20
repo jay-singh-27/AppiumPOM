@@ -6,7 +6,6 @@ import java.io.PrintWriter;
 import java.io.StringWriter;
 import java.util.HashMap;
 import java.util.Map;
-
 import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.OutputType;
 import org.testng.ITestContext;

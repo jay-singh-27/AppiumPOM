@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<suite name="Suite" parallel="tests" verbose = "5">
+<suite name="Suite" parallel="tests" verbose = "1" thread= "1">
 	<test name="Pixel_2">
 		<listeners>
 			<listener class-name="com.test.listeners.TestListener" />
@@ -11,7 +11,7 @@
 		<parameter name="systemPort" value="10000" />
 		<parameter name="chromeDriverPort" value="9515" />
 		<classes>
-			<!-- <class name="com.test.tests.LoginTest"></class> -->
+			<class name="com.test.tests.LoginTest"></class>
 			<class name="com.test.tests.WirelessAPTest"></class>
 		</classes>
 	</test>

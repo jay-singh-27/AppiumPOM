@@ -1,46 +1,30 @@
 package com.test;
 
 import io.appium.java_client.AppiumDriver;
-import io.appium.java_client.FindsByAndroidUIAutomator;
 import io.appium.java_client.InteractsWithApps;
 import io.appium.java_client.MobileElement;
 import io.appium.java_client.android.AndroidDriver;
-import io.appium.java_client.ios.IOSDriver;
 import io.appium.java_client.pagefactory.AppiumFieldDecorator;
-import io.appium.java_client.screenrecording.CanRecordScreen;
-
 import org.testng.annotations.BeforeTest;
-import org.testng.annotations.Optional;
 import org.testng.annotations.Parameters;
-
 import com.test.utils.TestUtils;
-
 import java.io.File;
-import java.io.FileOutputStream;
 import java.io.InputStream;
 import java.net.URL;
 import java.time.Duration;
 import java.util.HashMap;
-import java.util.Map;
 import java.util.Properties;
-
-import org.apache.commons.codec.binary.Base64;
 import org.apache.logging.log4j.ThreadContext;
-import org.openqa.selenium.By;
 import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.remote.DesiredCapabilities;
-import org.openqa.selenium.remote.RemoteWebElement;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.FluentWait;
 import org.openqa.selenium.support.ui.Wait;
 import org.openqa.selenium.support.ui.WebDriverWait;
-import org.testng.ITestResult;
-import org.testng.annotations.AfterMethod;
 import org.testng.annotations.AfterTest;
-import org.testng.annotations.BeforeMethod;
 
 public class Base {
 	protected static ThreadLocal <AppiumDriver> driver = new ThreadLocal<AppiumDriver>();

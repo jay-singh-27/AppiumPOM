@@ -13,13 +13,13 @@ import io.appium.java_client.pagefactory.AndroidFindBy;
 
 public class LoginPage extends Base {
 	TestUtils utils = new TestUtils();
-	
+
 	@AndroidFindBy (xpath = "//android.widget.EditText[@resource-id='com.meraki.mapidemo:id/apiKeyTxt']") 
 	private MobileElement apiKeyText;
-	
+
 	@AndroidFindBy (xpath = "//android.widget.Button[@resource-id='com.meraki.mapidemo:id/goButton']") 
 	private MobileElement goButton;
-	
+
 	public LoginPage enterAPIKey(String apikey) {
 		clear(apiKeyText);
 		utils.log().info("login with " + apikey);
@@ -32,7 +32,7 @@ public class LoginPage extends Base {
 		click(goButton);
 		return new WirelessAPListPage();
 	}
-	
+
 	public WirelessAPListPage login(String apikey) {
 		enterAPIKey(apikey);
 		return pressGoBtn();

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite verbose="5" name="Failed suite [Suite]" parallel="tests">
+<suite name="Failed suite [Suite]" parallel="tests">
   <parameter name="emulator" value="true"/>
   <parameter name="chromeDriverPort" value="9515"/>
   <parameter name="platformName" value="Android"/>
@@ -20,14 +20,22 @@
     <classes>
       <class name="com.test.tests.WirelessAPTest">
         <methods>
+          <include name="validateAPsonWirelessAPListPage"/>
           <include name="validateAPonAPDetailsPage"/>
           <include name="afterMethod"/>
           <include name="beforeClass"/>
           <include name="beforeMethod"/>
-          <include name="afterTest"/>
-          <include name="beforeTest"/>
         </methods>
       </class> <!-- com.test.tests.WirelessAPTest -->
+      <class name="com.test.tests.LoginTest">
+        <methods>
+          <include name="beforeClass"/>
+          <include name="beforeMethod"/>
+          <include name="afterTest"/>
+          <include name="afterMethod"/>
+          <include name="beforeTest"/>
+        </methods>
+      </class> <!-- com.test.tests.LoginTest -->
     </classes>
   </test> <!-- Pixel_2(failed) -->
 </suite> <!-- Failed suite [Suite] -->
