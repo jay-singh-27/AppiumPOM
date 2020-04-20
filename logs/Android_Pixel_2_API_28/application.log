@@ -35,3 +35,31 @@ Driver info: driver.version: AndroidDriver
 [logsAndroid_Pixel_2_API_28 INFO ] 2020-04-19 22:43:56.883 AP_DetailPage:45 - serial is - Q2FD-257W-K29Z
 [logsAndroid_Pixel_2_API_28 INFO ] 2020-04-19 22:43:57.026 AP_DetailPage:53 - usage is - 0.0 Bytes
 [logsAndroid_Pixel_2_API_28 INFO ] 2020-04-19 22:43:57.224 AP_DetailPage:60 - client is - 0
+[logsAndroid_Pixel_2_API_28 INFO ] 2020-04-19 22:49:28.646 Base:111 - log path: logs\Android_Pixel_2_API_28
+[logsAndroid_Pixel_2_API_28 INFO ] 2020-04-19 22:49:28.680 Base:117 - load config.properties
+[logsAndroid_Pixel_2_API_28 INFO ] 2020-04-19 22:49:28.681 Base:121 - load strings/strings.xml
+[logsAndroid_Pixel_2_API_28 INFO ] 2020-04-19 22:49:28.687 Base:137 - appUrl is C:/Users/singh/git/AppiumPOM/target/test-classes/app/app-debug.apk
+[logsAndroid_Pixel_2_API_28 INFO ] 2020-04-19 22:49:39.736 Base:141 - driver initialized: io.appium.java_client.android.AndroidDriver, Capabilities: {app=C:/Users/singh/git/AppiumPOM/target/test-classes/app/app-debug.apk, appActivity=.MainActivity, appPackage=com.meraki.mapidemo, avd=Pixel_2_API_28, chromeDriverPort=9515, databaseEnabled=false, desired={platformName=android, chromeDriverPort=9515, app=C:/Users/singh/git/AppiumPOM/target/test-classes/app/app-debug.apk, appActivity=.MainActivity, appPackage=com.meraki.mapidemo, avd=Pixel_2_API_28, deviceName=Pixel_2_API_28, systemPort=10000, udid=replace_with_device_udid}, deviceApiLevel=28, deviceManufacturer=Google, deviceModel=AOSP on IA Emulator, deviceName=emulator-5554, deviceScreenDensity=420, deviceScreenSize=1080x1920, deviceUDID=emulator-5554, javascriptEnabled=true, locationContextEnabled=false, networkConnectionEnabled=true, pixelRatio=2.625, platform=LINUX, platformName=Android, platformVersion=9, statBarHeight=63, systemPort=10000, takesScreenshot=true, udid=replace_with_device_udid, viewportRect={left=0, top=63, width=1080, height=1731}, warnings={}, webStorageEnabled=false}
+[logsAndroid_Pixel_2_API_28 INFO ] 2020-04-19 22:49:43.757 LoginTest:46 - 
+****** starting test:successfulLogin******
+
+[logsAndroid_Pixel_2_API_28 INFO ] 2020-04-19 22:49:44.754 LoginPage:25 - login with 5da1735a6a6b1360986bb2c8c10ae2817e476244
+[logsAndroid_Pixel_2_API_28 INFO ] 2020-04-19 22:49:45.534 LoginPage:31 - press Go button
+[logsAndroid_Pixel_2_API_28 INFO ] 2020-04-19 22:49:47.267 WirelessAPListPage:55 - ap menu page title is - Wireless AP's
+[logsAndroid_Pixel_2_API_28 INFO ] 2020-04-19 22:49:55.425 WirelessAPTest:55 - 
+****** starting test:validateAPsonWirelessAPListPage******
+
+[logsAndroid_Pixel_2_API_28 INFO ] 2020-04-19 22:49:56.251 LoginPage:25 - login with 5da1735a6a6b1360986bb2c8c10ae2817e476244
+[logsAndroid_Pixel_2_API_28 INFO ] 2020-04-19 22:49:56.978 LoginPage:31 - press Go button
+[logsAndroid_Pixel_2_API_28 INFO ] 2020-04-19 22:50:01.318 WirelessAPListPage:72 - name is - Wireless New Stadium
+[logsAndroid_Pixel_2_API_28 INFO ] 2020-04-19 22:50:04.509 WirelessAPListPage:80 - ip is - 172.29.1.141
+[logsAndroid_Pixel_2_API_28 INFO ] 2020-04-19 22:50:08.274 WirelessAPTest:55 - 
+****** starting test:validateAPonAPDetailsPage******
+
+[logsAndroid_Pixel_2_API_28 INFO ] 2020-04-19 22:50:08.999 LoginPage:25 - login with 5da1735a6a6b1360986bb2c8c10ae2817e476244
+[logsAndroid_Pixel_2_API_28 INFO ] 2020-04-19 22:50:09.650 LoginPage:31 - press Go button
+[logsAndroid_Pixel_2_API_28 INFO ] 2020-04-19 22:50:13.329 WirelessAPListPage:87 - click AP Icon
+[logsAndroid_Pixel_2_API_28 INFO ] 2020-04-19 22:50:14.985 AP_DetailPage:37 - model is - MR34
+[logsAndroid_Pixel_2_API_28 INFO ] 2020-04-19 22:50:15.915 AP_DetailPage:45 - serial is - Q2FD-257W-K29Z
+[logsAndroid_Pixel_2_API_28 INFO ] 2020-04-19 22:50:16.050 AP_DetailPage:53 - usage is - 0.0 Bytes
+[logsAndroid_Pixel_2_API_28 INFO ] 2020-04-19 22:50:16.229 AP_DetailPage:60 - client is - 0

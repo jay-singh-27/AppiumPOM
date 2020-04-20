@@ -5,27 +5,27 @@
       <![CDATA[This is the sample screenshot]]>
     </line>
     <line>
-      <![CDATA[<a href='C:\Users\singh\git\AppiumPOM\Screenshots\Android_Pixel_2_API_28\Success\2020-04-19-22-43-08\LoginTest\successfulLogin.png'> <img src='C:\Users\singh\git\AppiumPOM\Screenshots\Android_Pixel_2_API_28\Success\2020-04-19-22-43-08\LoginTest\successfulLogin.png' height='400' width='400'/> </a>]]>
+      <![CDATA[<a href='C:\Users\singh\git\AppiumPOM\Screenshots\Android_Pixel_2_API_28\Success\2020-04-19-22-49-28\LoginTest\successfulLogin.png'> <img src='C:\Users\singh\git\AppiumPOM\Screenshots\Android_Pixel_2_API_28\Success\2020-04-19-22-49-28\LoginTest\successfulLogin.png' height='400' width='400'/> </a>]]>
     </line>
     <line>
       <![CDATA[This is the sample screenshot]]>
     </line>
     <line>
-      <![CDATA[<a href='C:\Users\singh\git\AppiumPOM\Screenshots\Android_Pixel_2_API_28\Success\2020-04-19-22-43-08\WirelessAPTest\validateAPsonWirelessAPListPage.png'> <img src='C:\Users\singh\git\AppiumPOM\Screenshots\Android_Pixel_2_API_28\Success\2020-04-19-22-43-08\WirelessAPTest\validateAPsonWirelessAPListPage.png' height='400' width='400'/> </a>]]>
+      <![CDATA[<a href='C:\Users\singh\git\AppiumPOM\Screenshots\Android_Pixel_2_API_28\Success\2020-04-19-22-49-28\WirelessAPTest\validateAPsonWirelessAPListPage.png'> <img src='C:\Users\singh\git\AppiumPOM\Screenshots\Android_Pixel_2_API_28\Success\2020-04-19-22-49-28\WirelessAPTest\validateAPsonWirelessAPListPage.png' height='400' width='400'/> </a>]]>
     </line>
     <line>
       <![CDATA[This is the sample screenshot]]>
     </line>
     <line>
-      <![CDATA[<a href='C:\Users\singh\git\AppiumPOM\Screenshots\Android_Pixel_2_API_28\Success\2020-04-19-22-43-08\WirelessAPTest\validateAPonAPDetailsPage.png'> <img src='C:\Users\singh\git\AppiumPOM\Screenshots\Android_Pixel_2_API_28\Success\2020-04-19-22-43-08\WirelessAPTest\validateAPonAPDetailsPage.png' height='400' width='400'/> </a>]]>
+      <![CDATA[<a href='C:\Users\singh\git\AppiumPOM\Screenshots\Android_Pixel_2_API_28\Success\2020-04-19-22-49-28\WirelessAPTest\validateAPonAPDetailsPage.png'> <img src='C:\Users\singh\git\AppiumPOM\Screenshots\Android_Pixel_2_API_28\Success\2020-04-19-22-49-28\WirelessAPTest\validateAPonAPDetailsPage.png' height='400' width='400'/> </a>]]>
     </line>
   </reporter-output>
-  <suite name="Suite" duration-ms="53489" started-at="2020-04-20T03:43:08Z" finished-at="2020-04-20T03:44:02Z">
+  <suite name="Suite" duration-ms="53790" started-at="2020-04-20T03:49:28Z" finished-at="2020-04-20T03:50:21Z">
     <groups>
     </groups>
-    <test name="Pixel_2" duration-ms="53489" started-at="2020-04-20T03:43:08Z" finished-at="2020-04-20T03:44:02Z">
+    <test name="Pixel_2" duration-ms="53790" started-at="2020-04-20T03:49:28Z" finished-at="2020-04-20T03:50:21Z">
       <class name="com.test.tests.LoginTest">
-        <test-method status="PASS" signature="beforeTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.test.tests.LoginTest@30b8a058]" name="beforeTest" is-config="true" duration-ms="14075" started-at="2020-04-19T22:43:08Z" finished-at="2020-04-19T22:43:23Z">
+        <test-method status="PASS" signature="beforeTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.test.tests.LoginTest@30b8a058]" name="beforeTest" is-config="true" duration-ms="11629" started-at="2020-04-19T22:49:28Z" finished-at="2020-04-19T22:49:39Z">
           <params>
             <param index="0">
               <value>
@@ -61,11 +61,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeTest -->
-        <test-method status="PASS" signature="beforeClass()[pri:0, instance:com.test.tests.LoginTest@30b8a058]" name="beforeClass" is-config="true" duration-ms="3281" started-at="2020-04-19T22:43:23Z" finished-at="2020-04-19T22:43:26Z">
+        <test-method status="PASS" signature="beforeClass()[pri:0, instance:com.test.tests.LoginTest@30b8a058]" name="beforeClass" is-config="true" duration-ms="3997" started-at="2020-04-19T22:49:39Z" finished-at="2020-04-19T22:49:43Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
-        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.test.tests.LoginTest@30b8a058]" name="beforeMethod" is-config="true" duration-ms="250" started-at="2020-04-19T22:43:26Z" finished-at="2020-04-19T22:43:26Z">
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.test.tests.LoginTest@30b8a058]" name="beforeMethod" is-config="true" duration-ms="317" started-at="2020-04-19T22:49:43Z" finished-at="2020-04-19T22:49:44Z">
           <params>
             <param index="0">
               <value>
@@ -76,31 +76,31 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="successfulLogin()[pri:0, instance:com.test.tests.LoginTest@30b8a058]" name="successfulLogin" duration-ms="3376" started-at="2020-04-19T22:43:26Z" finished-at="2020-04-19T22:43:29Z">
+        <test-method status="PASS" signature="successfulLogin()[pri:0, instance:com.test.tests.LoginTest@30b8a058]" name="successfulLogin" duration-ms="3199" started-at="2020-04-19T22:49:44Z" finished-at="2020-04-19T22:49:47Z">
           <reporter-output>
             <line>
               <![CDATA[This is the sample screenshot]]>
             </line>
             <line>
-              <![CDATA[<a href='C:\Users\singh\git\AppiumPOM\Screenshots\Android_Pixel_2_API_28\Success\2020-04-19-22-43-08\LoginTest\successfulLogin.png'> <img src='C:\Users\singh\git\AppiumPOM\Screenshots\Android_Pixel_2_API_28\Success\2020-04-19-22-43-08\LoginTest\successfulLogin.png' height='400' width='400'/> </a>]]>
+              <![CDATA[<a href='C:\Users\singh\git\AppiumPOM\Screenshots\Android_Pixel_2_API_28\Success\2020-04-19-22-49-28\LoginTest\successfulLogin.png'> <img src='C:\Users\singh\git\AppiumPOM\Screenshots\Android_Pixel_2_API_28\Success\2020-04-19-22-49-28\LoginTest\successfulLogin.png' height='400' width='400'/> </a>]]>
             </line>
           </reporter-output>
         </test-method> <!-- successfulLogin -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.test.tests.LoginTest@30b8a058]" name="afterMethod" is-config="true" duration-ms="3053" started-at="2020-04-19T22:43:30Z" finished-at="2020-04-19T22:43:33Z">
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.test.tests.LoginTest@30b8a058]" name="afterMethod" is-config="true" duration-ms="3524" started-at="2020-04-19T22:49:48Z" finished-at="2020-04-19T22:49:51Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="afterTest()[pri:0, instance:com.test.tests.LoginTest@30b8a058]" name="afterTest" is-config="true" duration-ms="1215" started-at="2020-04-19T22:44:01Z" finished-at="2020-04-19T22:44:02Z">
+        <test-method status="PASS" signature="afterTest()[pri:0, instance:com.test.tests.LoginTest@30b8a058]" name="afterTest" is-config="true" duration-ms="1218" started-at="2020-04-19T22:50:20Z" finished-at="2020-04-19T22:50:21Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterTest -->
       </class> <!-- com.test.tests.LoginTest -->
       <class name="com.test.tests.WirelessAPTest">
-        <test-method status="PASS" signature="beforeClass()[pri:0, instance:com.test.tests.WirelessAPTest@614ddd49]" name="beforeClass" is-config="true" duration-ms="3092" started-at="2020-04-19T22:43:33Z" finished-at="2020-04-19T22:43:36Z">
+        <test-method status="PASS" signature="beforeClass()[pri:0, instance:com.test.tests.WirelessAPTest@614ddd49]" name="beforeClass" is-config="true" duration-ms="3895" started-at="2020-04-19T22:49:51Z" finished-at="2020-04-19T22:49:55Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
-        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.test.tests.WirelessAPTest@614ddd49]" name="beforeMethod" is-config="true" duration-ms="2515" started-at="2020-04-19T22:43:36Z" finished-at="2020-04-19T22:43:39Z">
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.test.tests.WirelessAPTest@614ddd49]" name="beforeMethod" is-config="true" duration-ms="2259" started-at="2020-04-19T22:49:55Z" finished-at="2020-04-19T22:49:57Z">
           <params>
             <param index="0">
               <value>
@@ -111,21 +111,21 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="validateAPsonWirelessAPListPage()[pri:0, instance:com.test.tests.WirelessAPTest@614ddd49]" name="validateAPsonWirelessAPListPage" duration-ms="6421" started-at="2020-04-19T22:43:39Z" finished-at="2020-04-19T22:43:45Z">
+        <test-method status="PASS" signature="validateAPsonWirelessAPListPage()[pri:0, instance:com.test.tests.WirelessAPTest@614ddd49]" name="validateAPsonWirelessAPListPage" duration-ms="6827" started-at="2020-04-19T22:49:57Z" finished-at="2020-04-19T22:50:04Z">
           <reporter-output>
             <line>
               <![CDATA[This is the sample screenshot]]>
             </line>
             <line>
-              <![CDATA[<a href='C:\Users\singh\git\AppiumPOM\Screenshots\Android_Pixel_2_API_28\Success\2020-04-19-22-43-08\WirelessAPTest\validateAPsonWirelessAPListPage.png'> <img src='C:\Users\singh\git\AppiumPOM\Screenshots\Android_Pixel_2_API_28\Success\2020-04-19-22-43-08\WirelessAPTest\validateAPsonWirelessAPListPage.png' height='400' width='400'/> </a>]]>
+              <![CDATA[<a href='C:\Users\singh\git\AppiumPOM\Screenshots\Android_Pixel_2_API_28\Success\2020-04-19-22-49-28\WirelessAPTest\validateAPsonWirelessAPListPage.png'> <img src='C:\Users\singh\git\AppiumPOM\Screenshots\Android_Pixel_2_API_28\Success\2020-04-19-22-49-28\WirelessAPTest\validateAPsonWirelessAPListPage.png' height='400' width='400'/> </a>]]>
             </line>
           </reporter-output>
         </test-method> <!-- validateAPsonWirelessAPListPage -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.test.tests.WirelessAPTest@614ddd49]" name="afterMethod" is-config="true" duration-ms="3313" started-at="2020-04-19T22:43:46Z" finished-at="2020-04-19T22:43:49Z">
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.test.tests.WirelessAPTest@614ddd49]" name="afterMethod" is-config="true" duration-ms="3347" started-at="2020-04-19T22:50:04Z" finished-at="2020-04-19T22:50:08Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.test.tests.WirelessAPTest@614ddd49]" name="beforeMethod" is-config="true" duration-ms="2105" started-at="2020-04-19T22:43:49Z" finished-at="2020-04-19T22:43:51Z">
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.test.tests.WirelessAPTest@614ddd49]" name="beforeMethod" is-config="true" duration-ms="2053" started-at="2020-04-19T22:50:08Z" finished-at="2020-04-19T22:50:10Z">
           <params>
             <param index="0">
               <value>
@@ -136,7 +136,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="validateAPonAPDetailsPage(java.lang.String)[pri:0, instance:com.test.tests.WirelessAPTest@614ddd49]" name="validateAPonAPDetailsPage" duration-ms="5800" started-at="2020-04-19T22:43:51Z" finished-at="2020-04-19T22:43:57Z">
+        <test-method status="PASS" signature="validateAPonAPDetailsPage(java.lang.String)[pri:0, instance:com.test.tests.WirelessAPTest@614ddd49]" name="validateAPonAPDetailsPage" duration-ms="5902" started-at="2020-04-19T22:50:10Z" finished-at="2020-04-19T22:50:16Z">
           <params>
             <param index="0">
               <value>
@@ -149,11 +149,11 @@
               <![CDATA[This is the sample screenshot]]>
             </line>
             <line>
-              <![CDATA[<a href='C:\Users\singh\git\AppiumPOM\Screenshots\Android_Pixel_2_API_28\Success\2020-04-19-22-43-08\WirelessAPTest\validateAPonAPDetailsPage.png'> <img src='C:\Users\singh\git\AppiumPOM\Screenshots\Android_Pixel_2_API_28\Success\2020-04-19-22-43-08\WirelessAPTest\validateAPonAPDetailsPage.png' height='400' width='400'/> </a>]]>
+              <![CDATA[<a href='C:\Users\singh\git\AppiumPOM\Screenshots\Android_Pixel_2_API_28\Success\2020-04-19-22-49-28\WirelessAPTest\validateAPonAPDetailsPage.png'> <img src='C:\Users\singh\git\AppiumPOM\Screenshots\Android_Pixel_2_API_28\Success\2020-04-19-22-49-28\WirelessAPTest\validateAPonAPDetailsPage.png' height='400' width='400'/> </a>]]>
             </line>
           </reporter-output>
         </test-method> <!-- validateAPonAPDetailsPage -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.test.tests.WirelessAPTest@614ddd49]" name="afterMethod" is-config="true" duration-ms="3648" started-at="2020-04-19T22:43:57Z" finished-at="2020-04-19T22:44:01Z">
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.test.tests.WirelessAPTest@614ddd49]" name="afterMethod" is-config="true" duration-ms="4095" started-at="2020-04-19T22:50:16Z" finished-at="2020-04-19T22:50:20Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
